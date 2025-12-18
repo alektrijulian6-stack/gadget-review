@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gadget Review - Daftar Ponsel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Gadget Review</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="phones.html">Daftar Ponsel</a>
+      <a href="video.html">Video</a>
+    </nav>
+  </header>
+
+  <main>
+    <input type="text" id="searchInput" placeholder="Cari merek ponsel..." onkeyup="searchPhone()">
+    <div id="historyContainer" style="display:none;">
+      <h3>History Pencarian:</h3>
+      <ul id="historyList"></ul>
+      <button id="clearHistoryBtn" onclick="clearHistory()">Hapus History</button>
+    </div>
+    <section id="phoneList"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
